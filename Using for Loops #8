@@ -1,0 +1,24 @@
+
+n = int(input("Fibonacci numbers: "))
+
+num1 = 0 #1. Fibonacci szam
+num2 = 1 #2. Fibonacci szam
+i = 0 #We have to definte "i"
+
+while(i<n):
+    if(i <= 1):
+        sum = i
+    else:
+        sum = num1 + num2
+        num1 = num2
+        num2 = sum
+        
+    print(sum)
+    i += 1
+    add = sum + num2 + num1 -1
+
+
+print()
+print("The sum of " + str(n) + " Fibonacci numbers is: ")
+
+print(add)
