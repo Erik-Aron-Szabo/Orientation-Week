@@ -1,0 +1,9 @@
+a = int(input("How long you want your triangle to be?\n"))
+
+for i in range(a):
+    ws = ' ' * (a - i -1)
+    st = '*' * i
+    print(ws + st + '*' + st + ws)
+    
+    
+    #ez nem siekrult, ameddig Robi meg nem mutatta
