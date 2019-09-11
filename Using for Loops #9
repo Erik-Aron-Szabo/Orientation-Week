@@ -1,0 +1,10 @@
+what_to_factor = float(input("What number do you want to factor: "))
+
+factoring_number = float(input("By what number do you want to factor it: "))
+
+
+if what_to_factor % factoring_number == 0:
+    remainder = what_to_factor//factoring_number
+    print(str(factoring_number) + " is in " + str(what_to_factor) + " by " + str(remainder) + " times!")
+else:
+    print("You can not factor by " + str(factoring_number) + "!")
