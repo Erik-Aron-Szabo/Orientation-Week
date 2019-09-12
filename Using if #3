@@ -1,0 +1,35 @@
+
+ideas = []
+while True:
+    idea = input("Give me integers: ")
+    if idea == "":
+        break
+    else:
+        ideas.append(idea)
+
+ideas = list(map(int, ideas))
+print(ideas)
+
+
+p = 0 #paros
+pt = 0 #paratlan
+sum = 0
+
+for j in ideas:
+    if j % 2 == 0:
+        p += 1
+    else:
+        pt += 1
+        sum = sum + j
+
+print("")
+
+print("The sum of all odd numbers is " + str(sum))
+
+print("")
+
+print("You have {} even numbers".format(p))
+
+print("")
+
+print("You have {} odd numbers".format(pt))
