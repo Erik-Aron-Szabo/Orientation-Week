@@ -1,0 +1,24 @@
+
+n = int(input("How many integers do you want to give me? "))
+min = 99999999
+max = -99999999
+
+list_of_numbers = []
+# n* fogja bekerni az integert
+for i in range(n):
+    nums = int(input("Write the integer here: "))
+    list_of_numbers.append(nums)
+    list_of_numbers = list(map(int, list_of_numbers))
+
+    if min > nums:
+        min = nums
+    elif max < nums:
+        max = nums
+
+# menjen vegig MINDEN szamon, es "IF" a legkissebb, irja azt ki!
+    
+print("Smallest number is {}".format(min))
+
+print("")
+
+print("Largest number is {}".format(max))
