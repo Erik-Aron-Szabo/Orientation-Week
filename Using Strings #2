@@ -1,0 +1,4 @@
+name = input("Give me a name: ")
+
+for letter in name:
+    print(letter)
