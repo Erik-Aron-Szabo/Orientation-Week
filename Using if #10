@@ -1,0 +1,17 @@
+
+a = int(input("Give me the A side of a triangle: "))
+b = int(input("Give me the B side of a triangle: "))
+c = int(input("Give me the C side of a triangle: "))
+
+
+if (a**2 + b**2) == c**2 or (a**2 + c**2) == b**2 or (b**2 + c**2) == a**2:
+    print("{}, {} and {} CAN make a right triangle!".format(a,b,c))
+    if c > a and c > b:
+        print("{} is the 'atfogo' of the triangle!".format(c))
+    elif b > c and b > a:
+        print("{} is the 'atfogo' of the triangle!".format(b))
+    elif a > c and a > b:
+        print("{} is the 'atfogo' of the triangle!".format(a))   
+else:
+    print("{}, {} and {} CAN NOT make a right triangle!".format(a,b,c))    
+
