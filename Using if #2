@@ -1,0 +1,9 @@
+mondat = input("Give me a sentence: ")
+
+mondat2 = [] #if space -----> (convert it to) NO SPACE
+for i in range(len(mondat)):
+    if mondat[i] == " ":
+        i += 1
+    else:
+        mondat2.append(mondat[i])
+print(''.join(mondat2))
