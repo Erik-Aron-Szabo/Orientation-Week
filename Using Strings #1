@@ -1,0 +1,4 @@
+mondat = input("Write me a sentence: ")
+
+for letter in mondat:
+    print(letter + " ", end = '')
