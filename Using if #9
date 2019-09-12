@@ -1,0 +1,14 @@
+
+a = int(input("Give me the A side of a triangle: "))
+b = int(input("Give me the B side of a triangle: "))
+c = int(input("Give me the C side of a triangle: "))
+
+
+# a**2 + b**2 = c**2
+
+
+if (a**2 + b**2) == c**2:
+    print("{}, {} and {} CAN be the sides of a right triangle!".format(a,b,c))
+else:
+    print("{}, {} and {} CAN NOT be the sides of a right triangle!".format(a,b,c))
+
