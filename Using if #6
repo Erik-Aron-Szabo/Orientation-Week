@@ -1,0 +1,9 @@
+mondat = input("Write a sentence, while putting some words betwwen '<' and '>': ")
+szo = ""
+for i in range(len(mondat)):
+    if mondat[i] == '<':
+        while mondat[i+1] != '>':
+            i += 1
+            szo += mondat[i]
+        print(szo)
+        szo = ""
