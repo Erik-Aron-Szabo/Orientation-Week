@@ -1,0 +1,9 @@
+
+a = int(input("Give me an integer: "))
+ch = input("Give me a character: ")
+
+
+for i in range(0,a):
+    for j in range(0,a):
+        print(ch, end='')# ha megvan az "a"-sor
+    print("")#sor-tores (start a new line)
