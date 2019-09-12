@@ -1,0 +1,26 @@
+
+T = int(input("Year: "))
+
+A = T % 19 #Ev
+B = T % 4 #Evszak
+C = T % 7
+D = (19 * A + 24) % 30
+E = (2*B + 4*C + 6*D + 5) % 7
+
+H = 22 + D + E
+
+
+
+
+#kivetel
+if E == 6 and D == 29:
+    H = 50
+elif E == 6 and D == 28 and A > 10:
+    H = 49
+
+# eldonti, hogy marcius vagy aprilis
+if H <= 31:
+    print("Easter sunday is on March {}.".format(H))
+else:
+    datum = H - 31
+    print("Easter sunday is on April {}.".format(datum))
