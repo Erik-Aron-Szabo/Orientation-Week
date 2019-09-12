@@ -1,0 +1,11 @@
+
+mondat = input("Give me a sentence: ")
+
+space = 0 #mert eleinte 0 space-t irt le a user
+
+for i in mondat:
+    if i == " ":
+        space += 1 # increases variable "space", as many times as the
+                   # user types a " "-space
+
+print("Ennyi szokoz van a beirt mondatodban: "+ str(space))
