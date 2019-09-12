@@ -1,0 +1,3 @@
+
+for j in range(len(mondat)-1, -1, -1):
+    print(mondat[j], end="")
